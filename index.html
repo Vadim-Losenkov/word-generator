@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>word generator</title>
+</head>
+<style>
+  [data-gen="form"] {
+    padding: 2rem;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  [data-gen="form"] input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #000;
+    font-weight: 700;
+  }
+  [data-gen="form"] button {
+    margin-top: 50px; 
+  }
+</style>
+<body>
+  <form data-gen="form">
+    <input type="text" data-gen="input">
+    <input type="text" data-gen="result" disabled value=" ">
+    <button data-gen="button">generate</button>
+  </form>
+</body>
+<script src="index.js"></script>
+</html>
